@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-color: #423e3e;
+  background-color: #28292f;
   width: 100%;
   height: 800px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px 100px;
+  padding: 80px 100px;
 `;
 
 const Wrapper = styled.div`
   display: flex;
-  align-items:center;
+  align-items: center;
   color: white;
+  gap: 50px;
 `;
 
 const Title = styled.p`
@@ -21,20 +22,35 @@ const Title = styled.p`
   font-size: 25px;
   font-style: normal;
   margin-top: 20px;
+  color: white;
 `;
 
 Title.Item = styled.p`
-  font-size: 52px;
+  font-size: 55px;
   font-style: normal;
   font-weight: 300;
-  margin: 0,0,50px;
-  
 `;
 
 Title.Items = styled.p`
-  font-size: 52px;
-  margin: 0,0,50px;
+  font-weight: 800;
+  font-size: 55px;
   font-style: normal;
 `;
 
-export { Container, Wrapper, Title };
+const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 25px;
+`;
+
+const Mouse = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  color: white;
+`;
+
+export { Container, Wrapper, Title, Icon, Mouse };

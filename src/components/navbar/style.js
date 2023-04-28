@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-color: #423e3e;
+  background-color: #28292f;
   color: #ffffff;
   display: flex;
   width: 100%;
   height: 50px;
-  padding: 0 100px;
+  padding: 50px 100px;
+  /* position:sticky;
+  top:0; */
 `;
 
 const Section = styled.div`
