@@ -10,10 +10,6 @@ justify-content:center;
 padding:50px 120px;
 `
 
-const Wrapper = styled.div`
-display:flex;
-align-items:center;
-`
 
 const Item = styled.div`
 display:flex;
@@ -64,4 +60,4 @@ background:transparent;
 cursor: pointer;
 `
 
-export{Container,Wrapper,Item,Name,Box,}
+export{Container,Item,Name,Box,}

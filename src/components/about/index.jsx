@@ -1,10 +1,10 @@
 import React from "react";
-import { Box, Container, Item, Name, Wrapper } from "./style";
+import { Box, Container, Item, Name, } from "./style";
 import mee from "../../assets/img/mee.jpeg";
 export const About = () => {
-  const newTab = url =>{
-    window.open(url)
-  }
+  // const newTab = url =>{
+  //   window.open(url)
+  // }
   return (
     <Container>
       <img style={{height: 400}} src={mee} alt="" />
@@ -33,9 +33,7 @@ export const About = () => {
           Email : <span className="color">aayubxon701@gmail.com</span>
         </Name>
         <Box>
-          <a href=''  target="blink" rel="noopener noreferrer">
-          <Box.Button oncklick={()=>newTab('My Portfolio.pdf')} >CV in English</Box.Button>
-          </a>
+          <Box.Button >CV in English</Box.Button>
           <Box.Button >CV in Korea</Box.Button>
         </Box>
       </Item>

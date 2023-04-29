@@ -4,7 +4,7 @@ import Services from '../components/service'
 import Work from '../components/work'
 import Resume from '../components/resume'
 import Contact from '../components/contact'
-import useId from '../hooks/useid'
+// import useId from '../hooks/useid'
 export const navbar = [
     {
         id: 1,
