@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Icon, Mouse, Title, Wrapper } from "./style";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
@@ -18,6 +17,10 @@ export const Home = () => {
     loop: true,
   });
 
+  const newTab = (url) => {
+    window.open(url);
+  };
+
   return (
     <>
       <Container>
@@ -32,19 +35,36 @@ export const Home = () => {
         <Title>FIND ME IN ⇣</Title>
         <Icon>
           <span className="icons">
-            <FaFacebookF className="item" />
+            <FaFacebookF
+              onClick={() =>
+                newTab(
+                  "https://www.facebook.com/profile.php?id=100010676509628"
+                )
+              }
+              className="item"
+            />
           </span>
           <span className="icons">
-            <FaTwitter className="item" />
+            <GrLinkedinOption
+              onClick={() =>
+                newTab(
+                  "https://www.linkedin.com/in/ayubkhon-akramov-9280b6235/"
+                )
+              }
+              className="item"
+            />
           </span>
           <span className="icons">
-            <GrLinkedinOption className="item" />
+            <FaInstagram
+              onClick={() => newTab("https://www.instagram.com/aayubb__/")}
+              className="item"
+            />
           </span>
           <span className="icons">
-            <FaInstagram className="item" />
-          </span>
-          <span className="icons">
-            <FaGithub className="item" />
+            <FaGithub
+              onClick={() => newTab("https://github.com/aayubkhon")}
+              className="item"
+            />
           </span>
         </Icon>
         <Mouse>
