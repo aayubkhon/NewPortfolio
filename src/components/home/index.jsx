@@ -8,6 +8,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { FiChevronsDown } from "react-icons/fi";
 import { Link } from "react-scroll";
 import About from "../about";
+import Services from "../service";
 export const Home = () => {
   const [text] = useTypewriter({
     words: ["Ayubkhon", "a Web", "Developer"],
@@ -82,6 +83,7 @@ export const Home = () => {
         </Mouse>
       </Container>
       <About />
+      <Services/>
     </>
   );
 };

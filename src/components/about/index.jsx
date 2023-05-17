@@ -1,13 +1,14 @@
 import React from "react";
-import { Box, Container, Item, Name, } from "./style";
+import { Box, Container, Item, MyPhoto, Name, } from "./style";
 import mee from "../../assets/img/mee.jpeg";
+import cv from "../../assets/resume/myCv.pdf"
 export const About = () => {
   // const newTab = url =>{
   //   window.open(url)
   // }
   return (
     <Container>
-      <img style={{height: 400}} src={mee} alt="" />
+      <MyPhoto src={mee} alt="" />
       <Item>
         <Name>My name is Akramov Ayubkhon.</Name>
         <Name.Job>I'm Front-End React Web Developer </Name.Job>
@@ -33,7 +34,8 @@ export const About = () => {
           Email : <span className="color">aayubxon701@gmail.com</span>
         </Name>
         <Box>
-          <Box.Button >CV in English</Box.Button>
+          <Box.Button> 
+            <a href={cv} target="blank"></a>CV in English</Box.Button>
           <Box.Button >CV in Korea</Box.Button>
         </Box>
       </Item>

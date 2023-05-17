@@ -15,7 +15,7 @@ const Item = styled.div`
 display:flex;
 flex-direction:column;
 margin-left:30px;
-gap:25px;
+gap:23px;
 `
 const Name = styled.p`
 font-size:20px;
@@ -59,5 +59,8 @@ color:white;
 background:transparent;
 cursor: pointer;
 `
+const MyPhoto = styled.img`
+height:70vh;
+`
 
-export{Container,Item,Name,Box,}
+export{Container,Item,Name,Box,MyPhoto}
