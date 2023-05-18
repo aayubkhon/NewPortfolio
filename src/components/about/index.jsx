@@ -1,7 +1,8 @@
 import React from "react";
-import { Box, Container, Item, MyPhoto, Name, } from "./style";
+import { Box, Container, Item, MyPhoto, Name } from "./style";
 import mee from "../../assets/img/mee.jpeg";
-import cv from "../../assets/resume/myCv.pdf"
+import cvkorea from "../../pdf/korea.pdf";
+import cvenglish from "../../pdf/english.pdf";
 export const About = () => {
   // const newTab = url =>{
   //   window.open(url)
@@ -34,9 +35,18 @@ export const About = () => {
           Email : <span className="color">aayubxon701@gmail.com</span>
         </Name>
         <Box>
-          <Box.Button> 
-            <a href={cv} target="blank"></a>CV in English</Box.Button>
-          <Box.Button >CV in Korea</Box.Button>
+          <Box.Button>
+            <a className="cv" href={cvenglish} target="_blank">
+              {" "}
+              CV in English{" "}
+            </a>
+          </Box.Button>
+          <Box.Button>
+            <a className="cv" href={cvkorea} target="_blank">
+              {" "}
+              CV in Korea{" "}
+            </a>
+          </Box.Button>
         </Box>
       </Item>
     </Container>

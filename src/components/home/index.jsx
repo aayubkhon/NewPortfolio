@@ -42,6 +42,7 @@ export const Home = () => {
                   "https://www.facebook.com/profile.php?id=100010676509628"
                 )
               }
+              target="blank"
               className="item"
             />
           </span>
@@ -52,6 +53,7 @@ export const Home = () => {
                   "https://www.linkedin.com/in/ayubkhon-akramov-9280b6235/"
                 )
               }
+              target="blank"
               className="item"
             />
           </span>
@@ -59,12 +61,14 @@ export const Home = () => {
             <FaInstagram
               onClick={() => newTab("https://www.instagram.com/aayubb__/")}
               className="item"
+              target="blank"
             />
           </span>
           <span className="icons">
             <FaGithub
               onClick={() => newTab("https://github.com/aayubkhon")}
               className="item"
+              target="blank"
             />
           </span>
         </Icon>
