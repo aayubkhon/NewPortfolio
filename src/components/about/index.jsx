@@ -36,13 +36,13 @@ export const About = () => {
         </Name>
         <Box>
           <Box.Button>
-            <a className="cv" href={cvenglish} target="_blank">
+            <a className="cv" href={cvenglish} target="blank">
               {" "}
               CV in English{" "}
             </a>
           </Box.Button>
           <Box.Button>
-            <a className="cv" href={cvkorea} target="_blank">
+            <a className="cv" href={cvkorea} target="blank">
               {" "}
               CV in Korea{" "}
             </a>
