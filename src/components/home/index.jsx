@@ -35,42 +35,38 @@ export const Home = () => {
         </Wrapper>
         <Title>FIND ME IN ⇣</Title>
         <Icon>
-          <span className="icons">
-            <FaFacebookF
-              onClick={() =>
-                newTab(
-                  "https://www.facebook.com/profile.php?id=100010676509628"
-                )
-              }
-              target="blank"
-              className="item"
-            />
-          </span>
-          <span className="icons">
-            <GrLinkedinOption
-              onClick={() =>
-                newTab(
-                  "https://www.linkedin.com/in/ayubkhon-akramov-9280b6235/"
-                )
-              }
-              target="blank"
-              className="item"
-            />
-          </span>
-          <span className="icons">
-            <FaInstagram
-              onClick={() => newTab("https://www.instagram.com/aayubb__/")}
-              className="item"
-              target="blank"
-            />
-          </span>
-          <span className="icons">
-            <FaGithub
-              onClick={() => newTab("https://github.com/aayubkhon")}
-              className="item"
-              target="blank"
-            />
-          </span>
+          <a
+            href="https://www.facebook.com/profile.php?id=100010676509628"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icons"
+          >
+            <FaFacebookF className="item" />
+          </a>
+          <a
+            className="icons"
+            href="https://www.linkedin.com/in/ayubkhon-akramov-9280b6235/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GrLinkedinOption className="item" />
+          </a>
+          <a
+            className="icons"
+            href="https://www.instagram.com/aayubb__/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="item" />
+          </a>
+          <a
+            className="icons"
+            href="https://github.com/aayubkhon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="item" />
+          </a>
         </Icon>
         <Mouse>
           <Link
@@ -87,7 +83,7 @@ export const Home = () => {
         </Mouse>
       </Container>
       <About />
-      <Services/>
+      <Services />
     </>
   );
 };
