@@ -12,7 +12,7 @@ export const About = () => {
       <MyPhoto src={mee} alt="" />
       <Item>
         <Name>My name is Akramov Ayubkhon.</Name>
-        <Name.Job>I'm Front-End React Web Developer </Name.Job>
+        <Name.Job>I'm Frontend React Web Developer </Name.Job>
         <Name.Title>
           I'm an enthusiastic and detail-oriented Frontend Software Engineer
           seeking an entry-level position with Company to use my skills in
@@ -26,10 +26,10 @@ export const About = () => {
           Age : <span className="color">25</span>
         </Name>
         <Name>
-          Address : <span className="color">Korea//Daegu city</span>
+          Address : <span className="color">South Korea//Seoul city</span>
         </Name>
         <Name>
-          Phone Number : <span className="color">01083054111</span>
+          Phone Number : <span className="color">+821083054111</span>
         </Name>
         <Name>
           Email : <span className="color">aayubxon701@gmail.com</span>
@@ -44,7 +44,7 @@ export const About = () => {
           <Box.Button>
             <a className="cv" href={cvkorea} target="blank">
               {" "}
-              CV in Korea{" "}
+              CV in Korean{" "}
             </a>
           </Box.Button>
         </Box>

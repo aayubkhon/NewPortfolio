@@ -18,9 +18,9 @@ margin-left:30px;
 gap:23px;
 `
 const Name = styled.p`
-font-size:20px;
+font-size:17px;
 font-style:normal;
-font-weight:300;
+font-weight:600;
 `
 
 Name.Job = styled.h1`

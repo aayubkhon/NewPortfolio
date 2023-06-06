@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-color: #28292f;
+  background-color: #0f1113;
   width: 100%;
   height: 800px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 80px 100px;
+  padding: 130px 100px;
 `;
 
 const Wrapper = styled.div`
