@@ -1,9 +1,5 @@
 import React from "react";
 import { Container, Wrapper, Info, Title, Item } from "./style";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IoIosCall } from "react-icons/io";
-import { IoMdMail } from "react-icons/io";
-import { MdPlace } from "react-icons/md";
 export const Contact = () => {
   return (
     <Container>
