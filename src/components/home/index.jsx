@@ -9,6 +9,9 @@ import { FiChevronsDown } from "react-icons/fi";
 import { Link } from "react-scroll";
 import About from "../about";
 import Services from "../service";
+import Work from "../work";
+import Contact from "../contact";
+import Footer from "../footer";
 export const Home = () => {
   const [text] = useTypewriter({
     words: ["Ayubkhon", "a Web Developer"],
@@ -81,6 +84,9 @@ export const Home = () => {
       </Container>
       <About />
       <Services/>
+      <Work/>
+      <Contact/>
+      <Footer/>
     </>
   );
 };

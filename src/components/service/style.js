@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Container = styled.div`
   background-color: #0f1113;
-  color: white;
   height: 100vh;
   padding-top: 40px;
 `;
@@ -13,7 +12,7 @@ const Title = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-top: 50px;
-  gap: 20px;
+  gap: 10px;
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -35,7 +34,7 @@ const Box = styled.div`
   width: 360px;
   height: 300px;
   transform: translateX(0px);
-  transition: 1.1s all;
+  transition: 1s all;
   :hover {
     box-shadow: 2px 2px 5px 5px #5e5e5e;
     background: linear-gradient(0deg, #000, #262626);

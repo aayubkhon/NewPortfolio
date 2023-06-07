@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;800&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;800&display=swap");
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 .slick-slide > div {
   margin: 0 50px;
@@ -15,9 +15,7 @@ body{
   margin: 0 -10px;
 }
 
-
-
- .test-css {
+.test-css {
   bottom: -25px;
   width: 100%;
   list-style: none;
@@ -25,7 +23,7 @@ body{
   position: absolute;
   right: 15px;
   padding: 0;
- text-align: center;
+  text-align: center;
 }
 
 .test-css li {
@@ -60,19 +58,18 @@ body{
   left: 0;
   width: 20px;
   height: 20px;
-  content: '•';
+  content: "•";
   text-align: center;
-  opacity: .75;
-  color: #6D6968;
+  opacity: 0.75;
+  color: #6d6968;
 }
 
 .test-css li.slick-active button:before {
-  opacity: .75;
+  opacity: 0.75;
   color: #ffffff;
 }
 
-
-.icons{
+.icons {
   position: relative;
   text-align: center;
   color: #fff;
@@ -83,64 +80,73 @@ body{
   height: 55px;
   overflow: hidden;
   transition: transform 0.5s;
-
 }
 
-.icons .item{
+.icons .item {
   font-size: 20px;
   text-align: center;
   position: relative;
   margin-top: 15px;
   z-index: 10;
-  transition: color 0.5s ;
+  transition: color 0.5s;
 }
 
-.icons::after{
-  content: '';
+.icons::after {
+  content: "";
   width: 100%;
   height: 100%;
   top: -90px;
   left: 0;
-  background: linear-gradient(-50deg, white, white );
+  background: linear-gradient(-50deg, white, white);
   position: absolute;
   transition: 0.05s;
-
 }
 
-.icons:hover:after{
+.icons:hover:after {
   top: 0;
 }
 
-.icons:hover .item{
+.icons:hover .item {
   color: black;
 }
-.icons:hover{
+.icons:hover {
   transform: translateY(-10px);
 }
 
-.mouse{
+.mouse {
   width: 55px;
   height: 45px;
   cursor: pointer;
-
 }
 
-.color{
-  font-size:17px;
-  font-style:normal;
-  font-weight:300;
-  color:#5e5e5e;
+.color {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  color: #5e5e5e;
   margin-left: 30px;
-
 }
 
-.cv{
+.titles {
+  color: #ffffff;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.subTitle {
+  color: #5e5e5e;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.cv {
   text-decoration: none;
   color: white;
 }
 
-
-.fonticon{
+.fonticon {
   width: 40px;
   height: 40px;
   /* background-color: #5e5e5e; */
@@ -148,6 +154,13 @@ body{
   margin-top: 25px;
 }
 
-.ee{
-  color: blue;
+.ItemMessage {
+  background-color: white;
+  border-radius: 10px;
+  color: #5e5e5e;
+  padding-left: 13px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-style: normal;
+  font-size: 15px;
 }

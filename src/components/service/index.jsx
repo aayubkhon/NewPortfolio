@@ -48,8 +48,8 @@ export const Services = () => {
   return (
     <Container>
       <Title>
-        <h1>My Services</h1>
-        <p>Everything I offer with a detailed overview of each.</p>
+        <h1 className="titles">My Services</h1>
+        <p className="subTitle">Everything I offer with a detailed overview of each.</p>
       </Title>
       <Wrapper.Box>
         <Slider {...settings} dotsClass="test-css">
