@@ -11,11 +11,11 @@ import "slick-carousel/slick/slick-theme.css";
 export const Services = () => {
   const settings = {
     dots: true,
-    infinite: true,
-    speed: 4000,
+    infinite: false,
+    speed: 1000,
     slidesToShow: 3,
-    slidesToScroll: 4,
-    initialSlide: 4,
+    slidesToScroll: 3,
+    initialSlide: 0,
     swipeToSlide: false,
     arrows: false,
     responsive: [
@@ -46,7 +46,7 @@ export const Services = () => {
     ],
   };
   return (
-    <Container>
+    <Container id="services">
       <Title>
         <h1 className="titles">My Services</h1>
         <p className="subTitle">Everything I offer with a detailed overview of each.</p>

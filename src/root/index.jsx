@@ -1,20 +1,22 @@
 import React from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Navbar from "../components/navbar";
-import { navbar } from "../utils/nav";
+import Home from "../components/home"
+import About from "../components/about"
+import Services from "../components/service"
+import Work from "../components/work"
+import Contact from "../components/contact"
+import Footer from "../components/footer"
 export const Root = () => {
   return (
-      <BrowserRouter>
-      <Routes>
-        <Route element={<Navbar />}>
-          {navbar.map(({ element, path, id }) => {
-            return <Route element={element} path={path} key={id} />;
-          })}
-        </Route>
-        <Route path="/" element={<Navigate to={"/home"} />} />
-        <Route path="*" element={<h1>404 Not Found</h1>} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Navbar/>
+      <Home/>
+      <About />
+      <Services/>
+      <Work/>
+      <Contact/>
+      <Footer/>
+    </div>
   );
 };
 

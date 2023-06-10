@@ -5,10 +5,11 @@ const Container = styled.div`
   color: #ffffff;
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 45px;
   padding: 50px 100px;
-  /* position:sticky;
-  top:0; */
+  position:sticky;
+  top:0;
+  z-index:1000;
 `;
 
 const Section = styled.div`
@@ -21,6 +22,7 @@ const Section = styled.div`
   gap: 30px;
   text-transform: capitalize;
   color: white;
+  font-weight:500;
 `;
 
 export { Container, Section };

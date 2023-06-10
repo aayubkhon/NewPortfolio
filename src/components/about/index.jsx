@@ -8,7 +8,7 @@ export const About = () => {
   //   window.open(url)
   // }
   return (
-    <Container>
+    <Container id='about'>
       <MyPhoto src={mee} alt="" />
       <Item>
         <Name>My name is Akramov Ayubkhon.</Name>

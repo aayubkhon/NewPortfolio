@@ -1,27 +1,28 @@
 import React from "react";
 import { Container, Section } from "./style";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import { navbar } from "../../utils/nav";
 import { Link } from "react-scroll";
 export const Navbar = () => {
-  const navigate = useNavigate();
+
   return (
     <>
       <Container>
-        <Section onClick={() => navigate("/home")}>
+        <Section>
           <h2>Ayubkhon</h2>
         </Section>
         <Section>
-          {navbar.map(({ title, path, id }) => {
+          {navbar.map(({ title, link, id }) => {
             return (
-              <Link
+              <Link key={id}
+                link={link}
                 activeClass="active"
-                className="test1"
-                to="test1"
+                className="link"
+                to={link}
                 spy={true}
                 smooth={true}
-                duration={500}
-                offset={50}
+                duration={700}
+                offset={-50}
               >
                 {title}
               </Link>

@@ -7,11 +7,6 @@ import { FaGithub } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FiChevronsDown } from "react-icons/fi";
 import { Link } from "react-scroll";
-import About from "../about";
-import Services from "../service";
-import Work from "../work";
-import Contact from "../contact";
-import Footer from "../footer";
 export const Home = () => {
   const [text] = useTypewriter({
     words: ["Ayubkhon", "a Web Developer"],
@@ -21,10 +16,9 @@ export const Home = () => {
     loop: true,
   });
 
-
   return (
     <>
-      <Container>
+      <Container id="home">
         <Title>Welcome !</Title>
         <Wrapper>
           <Title.Item>I'm</Title.Item>
@@ -71,22 +65,17 @@ export const Home = () => {
         <Mouse>
           <Link
             activeClass="active"
-            className="test1"
-            to="test1"
+            className="link"
+            to="about"
             spy={true}
             smooth={true}
-            duration={500}
-            offset={50}
+            duration={700}
+            offset={-50}
           >
             <FiChevronsDown className="mouse" />
           </Link>
         </Mouse>
       </Container>
-      <About />
-      <Services/>
-      <Work/>
-      <Contact/>
-      <Footer/>
     </>
   );
 };

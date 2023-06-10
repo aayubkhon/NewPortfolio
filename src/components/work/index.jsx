@@ -3,7 +3,7 @@ import { Container, Title } from './style'
 
 export const Work = () => {
   return (
-    <Container>
+    <Container id='work'>
       <Title>
         <h1 className='titles'>My Portfolio</h1>
         <p className='subTitle'>Below you can see some projects I've been working on lately.</p>

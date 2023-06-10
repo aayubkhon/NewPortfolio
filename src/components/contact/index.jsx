@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Wrapper, Info, Title, Item } from "./style";
 export const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <Title>
         <h1 className="titles">Contact Us</h1>
         <p className="subTitle">Have a question or want to work together?</p>
